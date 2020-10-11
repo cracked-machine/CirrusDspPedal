@@ -1,0 +1,72 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1800 3325 1725 1225
+U 5F834C36
+F0 "InputSignal" 50
+F1 "InputSignal.sch" 50
+F2 "ADIN_SDOUT" I R 3525 3650 50 
+F3 "ADIN_SCLK" I R 3525 4025 50 
+F4 "ADIN_LRCK" I R 3525 4175 50 
+F5 "ADIN_MCLK" I R 3525 4325 50 
+$EndSheet
+$Sheet
+S 8300 3325 1700 1225
+U 5F834DC7
+F0 "OutputSignal" 50
+F1 "OutputSignal.sch" 50
+F2 "ADOUT_SDIN" I L 8300 3650 50 
+F3 "ADOUT_SCLK" I L 8300 4025 50 
+F4 "ADOUT_LRCK" I L 8300 4175 50 
+F5 "ADOUT_MCLK" I L 8300 4325 50 
+$EndSheet
+$Sheet
+S 4600 3325 2000 1225
+U 5F834F6D
+F0 "SignalProcessing" 50
+F1 "SignalProcessing.sch" 50
+F2 "I2S_IN" I L 4600 3650 50 
+F3 "I2S_OUT" I R 6600 3650 50 
+F4 "I2S_MCLK_IN" I L 4600 4325 50 
+F5 "I2S_SCLK_OUT" I R 6600 4025 50 
+F6 "I2S_MCLK_OUT" I R 6600 4325 50 
+F7 "I2S_SCLK_IN" I L 4600 4025 50 
+F8 "I2S_LRCK_OUT" I R 6600 4175 50 
+F9 "I2S_LRCK_IN" I L 4600 4175 50 
+$EndSheet
+Wire Wire Line
+	3525 4325 4600 4325
+Wire Wire Line
+	3525 4175 4600 4175
+Wire Wire Line
+	3525 4025 4600 4025
+Wire Wire Line
+	4600 3650 3525 3650
+Wire Wire Line
+	6600 3650 8300 3650
+Wire Wire Line
+	6600 4025 8300 4025
+Wire Wire Line
+	6600 4175 8300 4175
+Wire Wire Line
+	6600 4325 8300 4325
+$Sheet
+S 4600 1325 2000 775 
+U 5F95DD48
+F0 "PSU" 50
+F1 "PSU.sch" 50
+$EndSheet
+$EndSCHEMATC
