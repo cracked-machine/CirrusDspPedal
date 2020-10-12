@@ -1,0 +1,269 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MonoJack2Switch:MonoJack2Switch J?
+U 1 1 5F89B734
+P 2700 1750
+AR Path="/5F89B734" Ref="J?"  Part="1" 
+AR Path="/5F834C36/5F89B734" Ref="J?"  Part="1" 
+AR Path="/5F898CA5/5F89B734" Ref="J5"  Part="1" 
+F 0 "J5" H 2795 2125 50  0000 C CNN
+F 1 "MonoJack2Switch" H 2795 2034 50  0000 C CNN
+F 2 "NeutrikNRJ:NRJxHx_NOTAB" H 2700 1800 50  0001 C CNN
+F 3 "" H 2700 1800 50  0001 C CNN
+	1    2700 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1900 3425 1900
+Wire Wire Line
+	3425 1900 3425 2875
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F89B73C
+P 3425 3000
+AR Path="/5F834C36/5F89B73C" Ref="#PWR?"  Part="1" 
+AR Path="/5F898CA5/5F89B73C" Ref="#PWR0135"  Part="1" 
+F 0 "#PWR0135" H 3425 2750 50  0001 C CNN
+F 1 "GNDS" H 3430 2827 50  0000 C CNN
+F 2 "" H 3425 3000 50  0001 C CNN
+F 3 "" H 3425 3000 50  0001 C CNN
+	1    3425 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1800 3425 1800
+Wire Wire Line
+	3425 1800 3425 1900
+Connection ~ 3425 1900
+Wire Wire Line
+	3150 1700 3425 1700
+Wire Wire Line
+	3425 1700 3425 1800
+Connection ~ 3425 1800
+$Comp
+L Device:R R?
+U 1 1 5F89B749
+P 6250 1700
+AR Path="/5F834C36/5F89B749" Ref="R?"  Part="1" 
+AR Path="/5F898CA5/5F89B749" Ref="R8"  Part="1" 
+F 0 "R8" V 6043 1700 50  0000 C CNN
+F 1 "50R" V 6134 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 1700 50  0001 C CNN
+F 3 "~" H 6250 1700 50  0001 C CNN
+	1    6250 1700
+	0    1    1    0   
+$EndComp
+Connection ~ 3425 2875
+Wire Wire Line
+	3425 2875 3425 3000
+$Comp
+L Device:C C?
+U 1 1 5F89B764
+P 6600 2000
+AR Path="/5F834C36/5F89B764" Ref="C?"  Part="1" 
+AR Path="/5F898CA5/5F89B764" Ref="C30"  Part="1" 
+F 0 "C30" H 6485 1954 50  0000 R CNN
+F 1 "180pF C0G" H 6485 2045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6638 1850 50  0001 C CNN
+F 3 "~" H 6600 2000 50  0001 C CNN
+	1    6600 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 1850 6600 1700
+Connection ~ 6600 1700
+Wire Wire Line
+	6600 1700 8475 1700
+Wire Wire Line
+	6600 2150 6600 2875
+$Comp
+L Amplifier_Operational:MCP601-xOT U6
+U 1 1 5F89C8FB
+P 5225 1700
+F 0 "U6" H 5425 2175 50  0000 L CNN
+F 1 "MCP601-xOT" H 5400 2075 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5125 1500 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5225 1900 50  0001 C CNN
+	1    5225 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3425 2875 6600 2875
+Wire Wire Line
+	6400 1700 6600 1700
+Wire Wire Line
+	5525 1700 5875 1700
+Wire Wire Line
+	4925 1600 3150 1600
+Wire Wire Line
+	4925 1800 4525 1800
+Wire Wire Line
+	4525 1800 4525 2575
+Wire Wire Line
+	4525 2575 5875 2575
+Wire Wire Line
+	5875 2575 5875 1700
+Connection ~ 5875 1700
+Wire Wire Line
+	5875 1700 6100 1700
+Wire Wire Line
+	5125 2000 5125 2200
+$Comp
+L power:GNDS #PWR0136
+U 1 1 5F8AC0A3
+P 5125 2200
+F 0 "#PWR0136" H 5125 1950 50  0001 C CNN
+F 1 "GNDS" H 5130 2027 50  0000 C CNN
+F 2 "" H 5125 2200 50  0001 C CNN
+F 3 "" H 5125 2200 50  0001 C CNN
+	1    5125 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 1400 5125 1150
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5F8AC451
+P 5125 1150
+F 0 "#PWR0137" H 5125 1000 50  0001 C CNN
+F 1 "+3.3V" H 5140 1323 50  0000 C CNN
+F 2 "" H 5125 1150 50  0001 C CNN
+F 3 "" H 5125 1150 50  0001 C CNN
+	1    5125 1150
+	1    0    0    -1  
+$EndComp
+Text HLabel 8475 1700 2    50   Input ~ 0
+ExpInput
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5F870D6C
+P 5225 4525
+F 0 "SW1" H 5225 4760 50  0000 C CNN
+F 1 "P26L-1D-RND MTL" H 5225 4669 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5225 4525 50  0001 C CNN
+F 3 "https://docs.rs-online.com/dd9b/0900766b8142ebd4.pdf" H 5225 4525 50  0001 C CNN
+	1    5225 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 4525 3725 4525
+Wire Wire Line
+	3725 4525 3725 4625
+$Comp
+L power:GNDS #PWR01
+U 1 1 5F871B35
+P 3725 4625
+F 0 "#PWR01" H 3725 4375 50  0001 C CNN
+F 1 "GNDS" H 3730 4452 50  0000 C CNN
+F 2 "" H 3725 4625 50  0001 C CNN
+F 3 "" H 3725 4625 50  0001 C CNN
+	1    3725 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 4525 6100 4525
+Text HLabel 6850 4525 2    50   Input ~ 0
+FootSwitchA
+Wire Wire Line
+	6100 4525 6100 4375
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5F87577F
+P 6100 3975
+F 0 "#PWR03" H 6100 3825 50  0001 C CNN
+F 1 "+3.3V" H 6115 4148 50  0000 C CNN
+F 2 "" H 6100 3975 50  0001 C CNN
+F 3 "" H 6100 3975 50  0001 C CNN
+	1    6100 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5F875B37
+P 6100 4225
+F 0 "R9" H 6170 4271 50  0000 L CNN
+F 1 "1K" H 6170 4180 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6030 4225 50  0001 C CNN
+F 3 "~" H 6100 4225 50  0001 C CNN
+	1    6100 4225
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 4525
+Wire Wire Line
+	6100 4525 6850 4525
+Wire Wire Line
+	6100 4075 6100 3975
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5F87B045
+P 5225 5700
+F 0 "SW2" H 5225 5935 50  0000 C CNN
+F 1 "P26L-1D-RND MTL" H 5225 5844 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5225 5700 50  0001 C CNN
+F 3 "https://docs.rs-online.com/dd9b/0900766b8142ebd4.pdf" H 5225 5700 50  0001 C CNN
+	1    5225 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 5700 3725 5700
+Wire Wire Line
+	3725 5700 3725 5800
+$Comp
+L power:GNDS #PWR02
+U 1 1 5F87B04D
+P 3725 5800
+F 0 "#PWR02" H 3725 5550 50  0001 C CNN
+F 1 "GNDS" H 3730 5627 50  0000 C CNN
+F 2 "" H 3725 5800 50  0001 C CNN
+F 3 "" H 3725 5800 50  0001 C CNN
+	1    3725 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 5700 6100 5700
+Text HLabel 6850 5700 2    50   Input ~ 0
+FootSwitchB
+Wire Wire Line
+	6100 5700 6100 5550
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5F87B056
+P 6100 5150
+F 0 "#PWR04" H 6100 5000 50  0001 C CNN
+F 1 "+3.3V" H 6115 5323 50  0000 C CNN
+F 2 "" H 6100 5150 50  0001 C CNN
+F 3 "" H 6100 5150 50  0001 C CNN
+	1    6100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5F87B05C
+P 6100 5400
+F 0 "R10" H 6170 5446 50  0000 L CNN
+F 1 "1K" H 6170 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6030 5400 50  0001 C CNN
+F 3 "~" H 6100 5400 50  0001 C CNN
+	1    6100 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 5700
+Wire Wire Line
+	6100 5700 6850 5700
+Wire Wire Line
+	6100 5250 6100 5150
+$EndSCHEMATC

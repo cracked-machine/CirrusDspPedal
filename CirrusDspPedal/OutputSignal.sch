@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 10
 Title ""
 Date ""
 Rev ""
@@ -34,7 +34,7 @@ AR Path="/5F83CFE1" Ref="J?"  Part="1"
 AR Path="/5F834DC7/5F83CFE1" Ref="J2"  Part="1" 
 F 0 "J2" H 7098 3401 50  0000 R CNN
 F 1 "MonoJack2Switch" H 7098 3310 50  0000 R CNN
-F 2 "" H 7400 3400 50  0001 C CNN
+F 2 "NeutrikNRJ:NRJxHx_NOTAB" H 7400 3400 50  0001 C CNN
 F 3 "" H 7400 3400 50  0001 C CNN
 	1    7400 3350
 	-1   0    0    -1  

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 8 10
 Title ""
 Date ""
 Rev ""
@@ -30,7 +30,7 @@ U 1 1 5F95ECC5
 P 4800 3575
 F 0 "D1" H 4800 3358 50  0000 C CNN
 F 1 "D_Schottky" H 4800 3449 50  0000 C CNN
-F 2 "" H 4800 3575 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 4800 3575 50  0001 C CNN
 F 3 "~" H 4800 3575 50  0001 C CNN
 	1    4800 3575
 	-1   0    0    1   
@@ -45,7 +45,7 @@ U 1 1 5F95F773
 P 3075 3675
 F 0 "J4" H 2950 3375 50  0000 R CNN
 F 1 "Barrel_Jack_Switch" H 3575 3450 50  0000 R CNN
-F 2 "" H 3125 3635 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 3125 3635 50  0001 C CNN
 F 3 "~" H 3125 3635 50  0001 C CNN
 	1    3075 3675
 	1    0    0    1   

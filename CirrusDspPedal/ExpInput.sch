@@ -1,0 +1,151 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MonoJack2Switch:MonoJack2Switch J?
+U 1 1 5F89B734
+P 2375 3675
+AR Path="/5F89B734" Ref="J?"  Part="1" 
+AR Path="/5F834C36/5F89B734" Ref="J?"  Part="1" 
+AR Path="/5F898CA5/5F89B734" Ref="J5"  Part="1" 
+F 0 "J5" H 2470 4050 50  0000 C CNN
+F 1 "MonoJack2Switch" H 2470 3959 50  0000 C CNN
+F 2 "NeutrikNRJ:NRJxHx_NOTAB" H 2375 3725 50  0001 C CNN
+F 3 "" H 2375 3725 50  0001 C CNN
+	1    2375 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2825 3825 3100 3825
+Wire Wire Line
+	3100 3825 3100 4800
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F89B73C
+P 3100 4925
+AR Path="/5F834C36/5F89B73C" Ref="#PWR?"  Part="1" 
+AR Path="/5F898CA5/5F89B73C" Ref="#PWR0135"  Part="1" 
+F 0 "#PWR0135" H 3100 4675 50  0001 C CNN
+F 1 "GNDS" H 3105 4752 50  0000 C CNN
+F 2 "" H 3100 4925 50  0001 C CNN
+F 3 "" H 3100 4925 50  0001 C CNN
+	1    3100 4925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2825 3725 3100 3725
+Wire Wire Line
+	3100 3725 3100 3825
+Connection ~ 3100 3825
+Wire Wire Line
+	2825 3625 3100 3625
+Wire Wire Line
+	3100 3625 3100 3725
+Connection ~ 3100 3725
+$Comp
+L Device:R R?
+U 1 1 5F89B749
+P 5925 3625
+AR Path="/5F834C36/5F89B749" Ref="R?"  Part="1" 
+AR Path="/5F898CA5/5F89B749" Ref="R8"  Part="1" 
+F 0 "R8" V 5718 3625 50  0000 C CNN
+F 1 "50R" V 5809 3625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5855 3625 50  0001 C CNN
+F 3 "~" H 5925 3625 50  0001 C CNN
+	1    5925 3625
+	0    1    1    0   
+$EndComp
+Connection ~ 3100 4800
+Wire Wire Line
+	3100 4800 3100 4925
+$Comp
+L Device:C C?
+U 1 1 5F89B764
+P 6275 3925
+AR Path="/5F834C36/5F89B764" Ref="C?"  Part="1" 
+AR Path="/5F898CA5/5F89B764" Ref="C30"  Part="1" 
+F 0 "C30" H 6160 3879 50  0000 R CNN
+F 1 "180pF C0G" H 6160 3970 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6313 3775 50  0001 C CNN
+F 3 "~" H 6275 3925 50  0001 C CNN
+	1    6275 3925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6275 3775 6275 3625
+Connection ~ 6275 3625
+Wire Wire Line
+	6275 3625 8150 3625
+Wire Wire Line
+	6275 4075 6275 4800
+$Comp
+L Amplifier_Operational:MCP601-xOT U6
+U 1 1 5F89C8FB
+P 4900 3625
+F 0 "U6" H 5100 4100 50  0000 L CNN
+F 1 "MCP601-xOT" H 5075 4000 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4800 3425 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 4900 3825 50  0001 C CNN
+	1    4900 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4800 6275 4800
+Wire Wire Line
+	6075 3625 6275 3625
+Wire Wire Line
+	5200 3625 5550 3625
+Wire Wire Line
+	4600 3525 2825 3525
+Wire Wire Line
+	4600 3725 4200 3725
+Wire Wire Line
+	4200 3725 4200 4500
+Wire Wire Line
+	4200 4500 5550 4500
+Wire Wire Line
+	5550 4500 5550 3625
+Connection ~ 5550 3625
+Wire Wire Line
+	5550 3625 5775 3625
+Wire Wire Line
+	4800 3925 4800 4125
+$Comp
+L power:GNDS #PWR0136
+U 1 1 5F8AC0A3
+P 4800 4125
+F 0 "#PWR0136" H 4800 3875 50  0001 C CNN
+F 1 "GNDS" H 4805 3952 50  0000 C CNN
+F 2 "" H 4800 4125 50  0001 C CNN
+F 3 "" H 4800 4125 50  0001 C CNN
+	1    4800 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3325 4800 3075
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5F8AC451
+P 4800 3075
+F 0 "#PWR0137" H 4800 2925 50  0001 C CNN
+F 1 "+3.3V" H 4815 3248 50  0000 C CNN
+F 2 "" H 4800 3075 50  0001 C CNN
+F 3 "" H 4800 3075 50  0001 C CNN
+	1    4800 3075
+	1    0    0    -1  
+$EndComp
+Text HLabel 8150 3625 2    50   Input ~ 0
+ExpInput
+$EndSCHEMATC
