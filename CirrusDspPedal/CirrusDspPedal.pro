@@ -1,4 +1,4 @@
-update=Sunday, 18 October 2020 at 12:47:14
+update=Sun 18 Oct 2020 17:37:22 BST
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=docs/schema
+PlotDirectoryName=docs/schema/svg
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

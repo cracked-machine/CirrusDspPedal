@@ -1,0 +1,273 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6800 2975 5625 2975
+Wire Wire Line
+	7400 2175 4550 2175
+Wire Wire Line
+	7300 2300 4925 2300
+Wire Wire Line
+	3850 2675 7000 2675
+Text HLabel 3850 2675 0    50   Input ~ 0
+uSD_CLK
+Text HLabel 3850 2975 0    50   Input ~ 0
+uSD_D0
+Text HLabel 3850 3125 0    50   Input ~ 0
+uSD_D1
+Text HLabel 3850 2175 0    50   Input ~ 0
+uSD_D2
+Text HLabel 3850 2300 0    50   Input ~ 0
+uSD_D3
+Text HLabel 3850 2425 0    50   Input ~ 0
+uSD_CMD
+$Comp
+L Connector:Micro_SD_Card_Det J6
+U 1 1 5FAF8592
+P 7000 4625
+F 0 "J6" V 6904 5305 50  0000 L CNN
+F 1 "Micro_SD_Card_Det" V 6995 5305 50  0000 L CNN
+F 2 "Connector_Card:microSD_HC_Molex_104031-0811" H 9050 5325 50  0001 C CNN
+F 3 "https://docs.rs-online.com/24e3/0900766b8144c28b.pdf" H 7000 4725 50  0001 C CNN
+	1    7000 4625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 2425 5275 2425
+Wire Wire Line
+	3850 3125 5975 3125
+Wire Wire Line
+	7400 3725 7400 2175
+Wire Wire Line
+	7300 3725 7300 2300
+Wire Wire Line
+	7200 3725 7200 2425
+Wire Wire Line
+	7000 3725 7000 2675
+Wire Wire Line
+	6800 3725 6800 2975
+Wire Wire Line
+	6700 3725 6700 3125
+Wire Wire Line
+	6600 3725 6600 3250
+Wire Wire Line
+	6500 3725 6500 3375
+Wire Wire Line
+	7100 1975 7100 3725
+$Comp
+L power:+3.3V #PWR015
+U 1 1 5FB10145
+P 7100 1975
+F 0 "#PWR015" H 7100 1825 50  0001 C CNN
+F 1 "+3.3V" H 7115 2148 50  0000 C CNN
+F 2 "" H 7100 1975 50  0001 C CNN
+F 3 "" H 7100 1975 50  0001 C CNN
+	1    7100 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1975 6900 3725
+$Comp
+L power:GNDS #PWR014
+U 1 1 5FB10A8F
+P 6900 1975
+F 0 "#PWR014" H 6900 1725 50  0001 C CNN
+F 1 "GNDS" H 6905 1802 50  0000 C CNN
+F 2 "" H 6900 1975 50  0001 C CNN
+F 3 "" H 6900 1975 50  0001 C CNN
+	1    6900 1975
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 3375 6025 3375
+Wire Wire Line
+	6025 3375 6025 4050
+$Comp
+L power:GNDS #PWR013
+U 1 1 5FB119AA
+P 6025 4050
+F 0 "#PWR013" H 6025 3800 50  0001 C CNN
+F 1 "GNDS" H 6030 3877 50  0000 C CNN
+F 2 "" H 6025 4050 50  0001 C CNN
+F 3 "" H 6025 4050 50  0001 C CNN
+	1    6025 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3250 5025 3250
+Text HLabel 3850 3250 0    50   Input ~ 0
+uSD_Detect
+$Comp
+L Device:R R24
+U 1 1 5FB12D8F
+P 4550 1725
+F 0 "R24" H 4620 1771 50  0000 L CNN
+F 1 "47K" H 4620 1680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4480 1725 50  0001 C CNN
+F 3 "~" H 4550 1725 50  0001 C CNN
+	1    4550 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 5FB155D6
+P 4925 1725
+F 0 "R25" H 4995 1771 50  0000 L CNN
+F 1 "47K" H 4995 1680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4855 1725 50  0001 C CNN
+F 3 "~" H 4925 1725 50  0001 C CNN
+	1    4925 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5FB158C2
+P 5275 1725
+F 0 "R26" H 5345 1771 50  0000 L CNN
+F 1 "47K" H 5345 1680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5205 1725 50  0001 C CNN
+F 3 "~" H 5275 1725 50  0001 C CNN
+	1    5275 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 5FB15A9B
+P 5625 1725
+F 0 "R27" H 5695 1771 50  0000 L CNN
+F 1 "47K" H 5695 1680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5555 1725 50  0001 C CNN
+F 3 "~" H 5625 1725 50  0001 C CNN
+	1    5625 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 5FB15D60
+P 5975 1725
+F 0 "R28" H 6045 1771 50  0000 L CNN
+F 1 "47K" H 6045 1680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5905 1725 50  0001 C CNN
+F 3 "~" H 5975 1725 50  0001 C CNN
+	1    5975 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1875 4550 2175
+Connection ~ 4550 2175
+Wire Wire Line
+	4550 2175 3850 2175
+Wire Wire Line
+	4925 1875 4925 2300
+Connection ~ 4925 2300
+Wire Wire Line
+	4925 2300 3850 2300
+Wire Wire Line
+	5275 1875 5275 2425
+Connection ~ 5275 2425
+Wire Wire Line
+	5275 2425 7200 2425
+Wire Wire Line
+	5625 1875 5625 2975
+Connection ~ 5625 2975
+Wire Wire Line
+	5625 2975 3850 2975
+Wire Wire Line
+	5975 1875 5975 3125
+Connection ~ 5975 3125
+Wire Wire Line
+	5975 3125 6700 3125
+Wire Wire Line
+	4550 1575 4550 1375
+Wire Wire Line
+	4550 1375 4925 1375
+Wire Wire Line
+	5975 1375 5975 1575
+Wire Wire Line
+	5625 1575 5625 1375
+Connection ~ 5625 1375
+Wire Wire Line
+	5625 1375 5975 1375
+Wire Wire Line
+	5275 1575 5275 1375
+Connection ~ 5275 1375
+Wire Wire Line
+	5275 1375 5625 1375
+Wire Wire Line
+	4925 1575 4925 1375
+Connection ~ 4925 1375
+Wire Wire Line
+	4925 1375 5275 1375
+Wire Wire Line
+	5275 1375 5275 1225
+$Comp
+L power:+3.3V #PWR012
+U 1 1 5FB1A870
+P 5275 1225
+F 0 "#PWR012" H 5275 1075 50  0001 C CNN
+F 1 "+3.3V" H 5290 1398 50  0000 C CNN
+F 2 "" H 5275 1225 50  0001 C CNN
+F 3 "" H 5275 1225 50  0001 C CNN
+	1    5275 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5FB1CCE1
+P 4225 1725
+F 0 "R23" H 4295 1771 50  0000 L CNN
+F 1 "10K" H 4295 1680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4155 1725 50  0001 C CNN
+F 3 "~" H 4225 1725 50  0001 C CNN
+	1    4225 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4225 1875 4225 3250
+Connection ~ 4225 3250
+Wire Wire Line
+	4225 3250 3850 3250
+Wire Wire Line
+	4225 1575 4225 1375
+Wire Wire Line
+	4225 1375 4550 1375
+Connection ~ 4550 1375
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5FB1F9FA
+P 4925 3250
+F 0 "JP1" H 4925 3400 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4925 3156 50  0001 C CNN
+F 2 "" H 4925 3250 50  0001 C CNN
+F 3 "~" H 4925 3250 50  0001 C CNN
+	1    4925 3250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4825 3250 4225 3250
+Wire Wire Line
+	6500 5425 6500 5675
+$Comp
+L power:GNDPWR #PWR017
+U 1 1 5FB246F5
+P 6500 5675
+F 0 "#PWR017" H 6500 5475 50  0001 C CNN
+F 1 "GNDPWR" H 6504 5521 50  0000 C CNN
+F 2 "" H 6500 5625 50  0001 C CNN
+F 3 "" H 6500 5625 50  0001 C CNN
+	1    6500 5675
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

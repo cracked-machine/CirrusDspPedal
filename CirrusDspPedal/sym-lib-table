@@ -1,5 +1,5 @@
 (sym_lib_table
   (lib (name CirrusAudioConverters)(type Legacy)(uri ${KIPRJMOD}/../../KicadLibrary/symbol/AUDIOCONVERTERS/CirrusAudioConverters.lib)(options "")(descr ""))
-  (lib (name MonoJack2Switch)(type Legacy)(uri /Users/chrissutton/Projects/HardwareProjects/KicadLibrary/symbol/CONNECTOR/AUDIO/MonoJack2Switch.lib)(options "")(descr ""))
-  (lib (name audiojack2-connector_numbered)(type Legacy)(uri /Users/chrissutton/Projects/HardwareProjects/KicadLibrary/symbol/CONNECTOR/AUDIO/audiojack2-connector_numbered.lib)(options "")(descr ""))
+  (lib (name MonoJack2Switch)(type Legacy)(uri ${KIPRJMOD}/../../KicadLibrary/symbol/CONNECTOR/AUDIO/MonoJack2Switch.lib)(options "")(descr ""))
+  (lib (name audiojack2-connector_numbered)(type Legacy)(uri ${KIPRJMOD}/../../KicadLibrary/symbol/CONNECTOR/AUDIO/audiojack2-connector_numbered.lib)(options "")(descr ""))
 )

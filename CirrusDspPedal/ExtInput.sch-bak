@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 11693 16535 portrait
 encoding utf-8
-Sheet 9 10
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -147,7 +147,7 @@ F 3 "" H 5350 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 8700 2400 2    50   Input ~ 0
-ExpInput
+FootExp_IN
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5F870D6C
@@ -177,7 +177,7 @@ $EndComp
 Wire Wire Line
 	5375 5750 6050 5750
 Text HLabel 6800 5750 2    50   Input ~ 0
-FootSwitchA
+FootSwitchA_IN
 Wire Wire Line
 	6050 5750 6050 5600
 $Comp
@@ -236,7 +236,7 @@ $EndComp
 Wire Wire Line
 	5400 7600 6075 7600
 Text HLabel 6825 7600 2    50   Input ~ 0
-FootSwitchB
+FootSwitchB_IN
 Wire Wire Line
 	6075 7600 6075 7450
 $Comp
@@ -319,7 +319,7 @@ $EndComp
 Wire Wire Line
 	4925 9575 5700 9575
 Text HLabel 7025 9575 2    50   Input ~ 0
-UserPotA
+UserPotA_IN
 $Comp
 L Device:R R13
 U 1 1 5F901F3D
@@ -411,7 +411,7 @@ $EndComp
 Wire Wire Line
 	4900 11800 5675 11800
 Text HLabel 7000 11800 2    50   Input ~ 0
-UserPotB
+UserPotB_IN
 $Comp
 L Device:R R14
 U 1 1 5F908FF7
@@ -456,7 +456,7 @@ U 1 1 5F93A731
 P 5850 13450
 F 0 "SW3" H 5850 13685 50  0000 C CNN
 F 1 "SW_SPST" H 5850 13594 50  0000 C CNN
-F 2 "" H 5850 13450 50  0001 C CNN
+F 2 "custom_sw:SW_SPDT_W6.86MM_L12.7MM_P4.8MM_D2MM" H 5850 13450 50  0001 C CNN
 F 3 "~" H 5850 13450 50  0001 C CNN
 	1    5850 13450
 	1    0    0    -1  
@@ -467,7 +467,7 @@ U 1 1 5F93AA4A
 P 5850 13875
 F 0 "SW4" H 5850 14110 50  0000 C CNN
 F 1 "SW_SPST" H 5850 14019 50  0000 C CNN
-F 2 "" H 5850 13875 50  0001 C CNN
+F 2 "custom_sw:SW_SPDT_W6.86MM_L12.7MM_P4.8MM_D2MM" H 5850 13875 50  0001 C CNN
 F 3 "~" H 5850 13875 50  0001 C CNN
 	1    5850 13875
 	1    0    0    -1  
@@ -555,7 +555,7 @@ F 3 "" H 4775 14500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 8375 13450 2    50   Input ~ 0
-UserSwA
+UserSwitchA_IN
 Text HLabel 8375 13875 2    50   Input ~ 0
-UserSwB
+UserSwitchB_IN
 $EndSCHEMATC
