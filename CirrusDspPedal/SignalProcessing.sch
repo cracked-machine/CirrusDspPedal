@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 8 10
 Title ""
 Date ""
 Rev ""
@@ -19,8 +19,6 @@ Text Label 7075 1325 2    50   ~ 0
 VDDA
 Wire Wire Line
 	6350 1600 6350 1325
-Text Label 6125 1325 0    50   ~ 0
-VBAT
 Wire Wire Line
 	6600 1325 6600 1150
 $Comp
@@ -59,38 +57,6 @@ Text Label 5150 1800 2    50   ~ 0
 NRST
 Wire Wire Line
 	5850 2000 4950 2000
-$Sheet
-S 1850 925  925  625 
-U 5F89A953
-F0 "STM32F411_PowerFiltering" 50
-F1 "STM32F411_PowerFiltering.sch" 50
-F2 "VDDA" I R 2775 1125 50 
-F3 "VBAT" I R 2775 1350 50 
-F4 "VDD_IN" I L 1850 1125 50 
-$EndSheet
-Text Label 3425 1350 0    50   ~ 0
-VBAT
-Wire Wire Line
-	2775 1350 3425 1350
-Text Label 3425 1125 0    50   ~ 0
-VDDA
-Wire Wire Line
-	2775 1125 3425 1125
-$Comp
-L power:+3.3V #PWR0118
-U 1 1 5F8C8E66
-P 1400 1000
-F 0 "#PWR0118" H 1400 850 50  0001 C CNN
-F 1 "+3.3V" H 1415 1173 50  0000 C CNN
-F 2 "" H 1400 1000 50  0001 C CNN
-F 3 "" H 1400 1000 50  0001 C CNN
-	1    1400 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 1125 1400 1000
-Wire Wire Line
-	1850 1125 1400 1125
 $Comp
 L Device:C C?
 U 1 1 5F8EA1EC
@@ -243,8 +209,8 @@ U 1 1 5F8EF106
 P 2325 2600
 F 0 "J3" H 2375 3017 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 2375 2926 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 2325 2600 50  0001 C CNN
-F 3 "~" H 2325 2600 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 2325 2600 50  0001 C CNN
+F 3 "https://docs.rs-online.com/75e3/0900766b8142184e.pdf" H 2325 2600 50  0001 C CNN
 	1    2325 2600
 	1    0    0    -1  
 $EndComp
@@ -466,7 +432,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 1325 7075 1325
 Wire Wire Line
-	6350 1325 6125 1325
+	6350 1325 6450 1325
 Wire Wire Line
 	7250 1800 7950 1800
 Text HLabel 7950 1800 2    50   Input ~ 0
@@ -857,4 +823,5 @@ Text HLabel 8075 2600 2    50   Input ~ 0
 uSD_Detect
 Text Notes 7375 2600 0    50   ~ 0
 SDIO_Detect
+Connection ~ 6450 1325
 $EndSCHEMATC

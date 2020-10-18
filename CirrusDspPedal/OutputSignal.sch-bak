@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 11
+Sheet 4 10
 Title ""
 Date ""
 Rev ""
@@ -259,7 +259,7 @@ $EndComp
 $Sheet
 S 4650 1375 1525 800 
 U 5F893E1B
-F0 "sheet5F893E17" 50
+F0 "PwrFilter_CS4344" 50
 F1 "PowerFiltering.sch" 50
 F2 "VDD_OUT" I L 4650 1775 50 
 F3 "VDD_IN" I R 6175 1775 50 
