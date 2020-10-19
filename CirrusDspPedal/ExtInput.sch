@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 11693 16535 portrait
 encoding utf-8
-Sheet 10 10
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -271,7 +271,7 @@ L Device:R_POT RV1
 U 1 1 5F8FDBD5
 P 4775 9575
 F 0 "RV1" H 4706 9621 50  0000 R CNN
-F 1 "R_POT" H 4706 9530 50  0000 R CNN
+F 1 " RK09L1140A65" H 4706 9530 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4775 9575 50  0001 C CNN
 F 3 "https://tech.alpsalpine.com/prod/e/pdf/potentiometer/rotarypotentiometers/rk09l/rk09l.pdf" H 4775 9575 50  0001 C CNN
 	1    4775 9575
@@ -363,7 +363,7 @@ L Device:R_POT RV2
 U 1 1 5F908FDA
 P 4750 11800
 F 0 "RV2" H 4681 11846 50  0000 R CNN
-F 1 "R_POT" H 4681 11755 50  0000 R CNN
+F 1 " RK09L1140A65" H 4681 11755 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4750 11800 50  0001 C CNN
 F 3 "https://tech.alpsalpine.com/prod/e/pdf/potentiometer/rotarypotentiometers/rk09l/rk09l.pdf" H 4750 11800 50  0001 C CNN
 	1    4750 11800
@@ -558,4 +558,8 @@ Text HLabel 8375 13450 2    50   Input ~ 0
 UserSwitchA_IN
 Text HLabel 8375 13875 2    50   Input ~ 0
 UserSwitchB_IN
+Text Notes 3525 11575 0    50   ~ 0
+Use RK09D1130A1N is \nlonger shaft required
+Text Notes 3500 9325 0    50   ~ 0
+Use RK09D1130A1N is \nlonger shaft required
 $EndSCHEMATC
