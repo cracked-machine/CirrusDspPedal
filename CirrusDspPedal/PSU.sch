@@ -18,9 +18,9 @@ L Regulator_Linear:MCP1700-3302E_SOT23 U5
 U 1 1 5F95E7A8
 P 6550 3575
 F 0 "U5" H 6550 3817 50  0000 C CNN
-F 1 "MCP1700-3302E_SOT23" H 6550 3726 50  0000 C CNN
+F 1 "MCP1703T-3302E/CB" H 6550 3726 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 3800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 6550 3575 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/22049f.pdf" H 6550 3575 50  0001 C CNN
 	1    6550 3575
 	1    0    0    -1  
 $EndComp
@@ -228,4 +228,6 @@ Wire Wire Line
 Connection ~ 5575 5825
 Wire Wire Line
 	5575 5825 5575 5725
+Text Notes 6375 3175 0    50   ~ 0
+16Vin Max\n250mA out
 $EndSCHEMATC
