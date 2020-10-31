@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Linear:MCP1700-3302E_SOT23 U5
-U 1 1 5F95E7A8
-P 6550 3575
-F 0 "U5" H 6550 3817 50  0000 C CNN
-F 1 "MCP1703T-3302E/CB" H 6550 3726 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 3800 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/22049f.pdf" H 6550 3575 50  0001 C CNN
-	1    6550 3575
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D_Schottky D1
 U 1 1 5F95ECC5
 P 4800 3575
@@ -230,4 +219,15 @@ Wire Wire Line
 	5575 5825 5575 5725
 Text Notes 6375 3175 0    50   ~ 0
 16Vin Max\n250mA out
+$Comp
+L Regulator_Linear:MCP1703A-1202_SOT223 U5
+U 1 1 5F9DD190
+P 6550 3575
+F 0 "U5" H 6550 3817 50  0000 C CNN
+F 1 "MCP1703A-1202_SOT223" H 6550 3726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6550 3775 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf" H 6550 3525 50  0001 C CNN
+	1    6550 3575
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
