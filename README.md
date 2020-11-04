@@ -1,3 +1,4 @@
 CirrusDspPedal
 
-[Required Kicad Hardware library](https://github.com/cracked-machine/KicadLibrary)
+
+Required Kicad Hardware library: https://github.com/cracked-machine/KicadLibrary
