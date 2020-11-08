@@ -795,12 +795,6 @@ Text HLabel 5100 4500 0    50   Input ~ 0
 uSD_D2
 Text HLabel 5100 4600 0    50   Input ~ 0
 uSD_D3
-Wire Wire Line
-	7250 2600 8075 2600
-Text HLabel 8075 2600 2    50   Input ~ 0
-uSD_Detect
-Text Notes 7375 2600 0    50   ~ 0
-SDIO_Detect
 Connection ~ 6450 1325
 $Comp
 L Device:LED_RCBG LED1
@@ -824,4 +818,5 @@ F 3 "~" H 10000 3600 50  0001 C CNN
 	1    10000 3650
 	-1   0    0    -1  
 $EndComp
+NoConn ~ 7250 2600
 $EndSCHEMATC

@@ -33,17 +33,6 @@ Text HLabel 3850 2300 0    50   Input ~ 0
 uSD_D3
 Text HLabel 3850 2425 0    50   Input ~ 0
 uSD_CMD
-$Comp
-L Connector:Micro_SD_Card_Det J6
-U 1 1 5FAF8592
-P 7000 4625
-F 0 "J6" V 6904 5305 50  0000 L CNN
-F 1 "Micro_SD_Card_Det" V 6995 5305 50  0000 L CNN
-F 2 "Connector_Card:microSD_HC_Molex_104031-0811" H 9050 5325 50  0001 C CNN
-F 3 "https://docs.rs-online.com/24e3/0900766b8144c28b.pdf" H 7000 4725 50  0001 C CNN
-	1    7000 4625
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3850 2425 5275 2425
 Wire Wire Line
@@ -60,10 +49,6 @@ Wire Wire Line
 	6800 3725 6800 2975
 Wire Wire Line
 	6700 3725 6700 3125
-Wire Wire Line
-	6600 3725 6600 3250
-Wire Wire Line
-	6500 3725 6500 3375
 Wire Wire Line
 	7100 1975 7100 3725
 $Comp
@@ -90,25 +75,6 @@ F 3 "" H 6900 1975 50  0001 C CNN
 	1    6900 1975
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6500 3375 6025 3375
-Wire Wire Line
-	6025 3375 6025 4050
-$Comp
-L power:GNDS #PWR013
-U 1 1 5FB119AA
-P 6025 4050
-F 0 "#PWR013" H 6025 3800 50  0001 C CNN
-F 1 "GNDS" H 6030 3877 50  0000 C CNN
-F 2 "" H 6025 4050 50  0001 C CNN
-F 3 "" H 6025 4050 50  0001 C CNN
-	1    6025 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 3250 5025 3250
-Text HLabel 3850 3250 0    50   Input ~ 0
-uSD_Detect
 $Comp
 L Device:R R24
 U 1 1 5FB12D8F
@@ -223,40 +189,6 @@ F 3 "" H 5275 1225 50  0001 C CNN
 	1    5275 1225
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R23
-U 1 1 5FB1CCE1
-P 4225 1725
-F 0 "R23" H 4295 1771 50  0000 L CNN
-F 1 "10K" H 4295 1680 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4155 1725 50  0001 C CNN
-F 3 "~" H 4225 1725 50  0001 C CNN
-	1    4225 1725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4225 1875 4225 3250
-Connection ~ 4225 3250
-Wire Wire Line
-	4225 3250 3850 3250
-Wire Wire Line
-	4225 1575 4225 1375
-Wire Wire Line
-	4225 1375 4550 1375
-Connection ~ 4550 1375
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5FB1F9FA
-P 4925 3250
-F 0 "JP1" H 4925 3400 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 4925 3156 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 4925 3250 50  0001 C CNN
-F 3 "~" H 4925 3250 50  0001 C CNN
-	1    4925 3250
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	4825 3250 4225 3250
 Wire Wire Line
 	6500 5425 6500 5675
 $Comp
@@ -269,5 +201,16 @@ F 2 "" H 6500 5625 50  0001 C CNN
 F 3 "" H 6500 5625 50  0001 C CNN
 	1    6500 5675
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Micro_SD_Card J6
+U 1 1 5FA9DE35
+P 7100 4625
+F 0 "J6" V 7004 5205 50  0000 L CNN
+F 1 "Micro_SD_Card" V 7095 5205 50  0000 L CNN
+F 2 "Molex_SDIO:Molex_SDIO_475710001" H 8250 4925 50  0001 C CNN
+F 3 "https://www.molex.com/molex/products/part-detail/memory_card_socket/0475710001" H 7100 4625 50  0001 C CNN
+	1    7100 4625
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
