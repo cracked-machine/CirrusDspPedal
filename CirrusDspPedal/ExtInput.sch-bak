@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 11693 16535 portrait
 encoding utf-8
-Sheet 9 10
+Sheet 9 12
 Title ""
 Date ""
 Rev ""
@@ -267,190 +267,6 @@ Wire Wire Line
 Wire Wire Line
 	6075 7150 6075 7050
 $Comp
-L Device:R_POT RV1
-U 1 1 5F8FDBD5
-P 4775 9575
-F 0 "RV1" H 4706 9621 50  0000 R CNN
-F 1 " RK09L1140A65" H 4706 9530 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4775 9575 50  0001 C CNN
-F 3 "https://tech.alpsalpine.com/prod/e/pdf/potentiometer/rotarypotentiometers/rk09l/rk09l.pdf" H 4775 9575 50  0001 C CNN
-	1    4775 9575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4775 9425 4775 9050
-$Comp
-L power:+3.3V #PWR06
-U 1 1 5F900058
-P 4775 9050
-F 0 "#PWR06" H 4775 8900 50  0001 C CNN
-F 1 "+3.3V" H 4790 9223 50  0000 C CNN
-F 2 "" H 4775 9050 50  0001 C CNN
-F 3 "" H 4775 9050 50  0001 C CNN
-	1    4775 9050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5F90026E
-P 4775 10025
-F 0 "R11" H 4845 10071 50  0000 L CNN
-F 1 "100R" H 4845 9980 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4705 10025 50  0001 C CNN
-F 3 "~" H 4775 10025 50  0001 C CNN
-	1    4775 10025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4775 9875 4775 9725
-Wire Wire Line
-	4775 10175 4775 10275
-$Comp
-L power:GNDS #PWR07
-U 1 1 5F9015F0
-P 4775 10375
-F 0 "#PWR07" H 4775 10125 50  0001 C CNN
-F 1 "GNDS" H 4780 10202 50  0000 C CNN
-F 2 "" H 4775 10375 50  0001 C CNN
-F 3 "" H 4775 10375 50  0001 C CNN
-	1    4775 10375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4925 9575 5700 9575
-Text HLabel 7025 9575 2    50   Input ~ 0
-UserPotA_IN
-$Comp
-L Device:R R13
-U 1 1 5F901F3D
-P 5850 9575
-F 0 "R13" V 5643 9575 50  0000 C CNN
-F 1 "50R" V 5734 9575 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5780 9575 50  0001 C CNN
-F 3 "~" H 5850 9575 50  0001 C CNN
-	1    5850 9575
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6000 9575 6275 9575
-$Comp
-L Device:C C?
-U 1 1 5F9025AC
-P 6275 9850
-AR Path="/5F834C36/5F9025AC" Ref="C?"  Part="1" 
-AR Path="/5F898CA5/5F9025AC" Ref="C31"  Part="1" 
-F 0 "C31" H 6160 9804 50  0000 R CNN
-F 1 "100nF" H 6160 9895 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6313 9700 50  0001 C CNN
-F 3 "~" H 6275 9850 50  0001 C CNN
-	1    6275 9850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6275 9700 6275 9575
-Connection ~ 6275 9575
-Wire Wire Line
-	6275 9575 7025 9575
-Wire Wire Line
-	6275 10000 6275 10275
-Wire Wire Line
-	6275 10275 4775 10275
-Connection ~ 4775 10275
-Wire Wire Line
-	4775 10275 4775 10375
-$Comp
-L Device:R_POT RV2
-U 1 1 5F908FDA
-P 4750 11800
-F 0 "RV2" H 4681 11846 50  0000 R CNN
-F 1 " RK09L1140A65" H 4681 11755 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4750 11800 50  0001 C CNN
-F 3 "https://tech.alpsalpine.com/prod/e/pdf/potentiometer/rotarypotentiometers/rk09l/rk09l.pdf" H 4750 11800 50  0001 C CNN
-	1    4750 11800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 11650 4750 11275
-$Comp
-L power:+3.3V #PWR08
-U 1 1 5F908FE1
-P 4750 11275
-F 0 "#PWR08" H 4750 11125 50  0001 C CNN
-F 1 "+3.3V" H 4765 11448 50  0000 C CNN
-F 2 "" H 4750 11275 50  0001 C CNN
-F 3 "" H 4750 11275 50  0001 C CNN
-	1    4750 11275
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5F908FE7
-P 4750 12250
-F 0 "R12" H 4820 12296 50  0000 L CNN
-F 1 "100R" H 4820 12205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4680 12250 50  0001 C CNN
-F 3 "~" H 4750 12250 50  0001 C CNN
-	1    4750 12250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 12100 4750 11950
-Wire Wire Line
-	4750 12400 4750 12500
-$Comp
-L power:GNDS #PWR09
-U 1 1 5F908FEF
-P 4750 12600
-F 0 "#PWR09" H 4750 12350 50  0001 C CNN
-F 1 "GNDS" H 4755 12427 50  0000 C CNN
-F 2 "" H 4750 12600 50  0001 C CNN
-F 3 "" H 4750 12600 50  0001 C CNN
-	1    4750 12600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 11800 5675 11800
-Text HLabel 7000 11800 2    50   Input ~ 0
-UserPotB_IN
-$Comp
-L Device:R R14
-U 1 1 5F908FF7
-P 5825 11800
-F 0 "R14" V 5618 11800 50  0000 C CNN
-F 1 "50R" V 5709 11800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5755 11800 50  0001 C CNN
-F 3 "~" H 5825 11800 50  0001 C CNN
-	1    5825 11800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5975 11800 6250 11800
-$Comp
-L Device:C C?
-U 1 1 5F908FFE
-P 6250 12075
-AR Path="/5F834C36/5F908FFE" Ref="C?"  Part="1" 
-AR Path="/5F898CA5/5F908FFE" Ref="C32"  Part="1" 
-F 0 "C32" H 6135 12029 50  0000 R CNN
-F 1 "100nF" H 6135 12120 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6288 11925 50  0001 C CNN
-F 3 "~" H 6250 12075 50  0001 C CNN
-	1    6250 12075
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6250 11925 6250 11800
-Connection ~ 6250 11800
-Wire Wire Line
-	6250 11800 7000 11800
-Wire Wire Line
-	6250 12225 6250 12500
-Wire Wire Line
-	6250 12500 4750 12500
-Connection ~ 4750 12500
-Wire Wire Line
-	4750 12500 4750 12600
-$Comp
 L Switch:SW_SPST SW3
 U 1 1 5F93A731
 P 5850 13450
@@ -558,8 +374,46 @@ Text HLabel 8375 13450 2    50   Input ~ 0
 UserSwitchA_IN
 Text HLabel 8375 13875 2    50   Input ~ 0
 UserSwitchB_IN
-Text Notes 3525 11575 0    50   ~ 0
-Use RK09D1130A1N is \nlonger shaft required
-Text Notes 3500 9325 0    50   ~ 0
-Use RK09D1130A1N is \nlonger shaft required
+$Sheet
+S 4850 9350 1000 750 
+U 5FAC3062
+F0 "RotaryEncoder1" 50
+F1 "RotaryEncoder.sch" 50
+F2 "ENC_B" I R 5850 9850 50 
+F3 "ENC_A" I R 5850 9750 50 
+F4 "ENC_SW" I R 5850 9550 50 
+$EndSheet
+$Sheet
+S 4850 11000 1000 750 
+U 5FAC8ACD
+F0 "RotaryEncoder2" 50
+F1 "RotaryEncoder.sch" 50
+F2 "ENC_B" I R 5850 11500 50 
+F3 "ENC_A" I R 5850 11400 50 
+F4 "ENC_SW" I R 5850 11200 50 
+$EndSheet
+Wire Wire Line
+	5850 9550 6900 9550
+Text HLabel 6900 9550 2    50   Input ~ 0
+Encoder1_ENC_SW
+Wire Wire Line
+	5850 9750 6900 9750
+Wire Wire Line
+	5850 9850 6900 9850
+Text HLabel 6900 9750 2    50   Input ~ 0
+Encoder1_ENC_A
+Text HLabel 6900 9850 2    50   Input ~ 0
+Encoder1_ENC_B
+Wire Wire Line
+	5850 11200 6900 11200
+Text HLabel 6900 11200 2    50   Input ~ 0
+Encoder2_ENC_SW
+Wire Wire Line
+	5850 11400 6900 11400
+Wire Wire Line
+	5850 11500 6900 11500
+Text HLabel 6900 11400 2    50   Input ~ 0
+Encoder2_ENC_A
+Text HLabel 6900 11500 2    50   Input ~ 0
+Encoder2_ENC_B
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 10
+Sheet 8 12
 Title ""
 Date ""
 Rev ""
@@ -272,18 +272,10 @@ Text HLabel 2225 4800 0    50   Input ~ 0
 I2S_MCLK_IN
 Text HLabel 2725 3800 2    50   Input ~ 0
 I2S_SCLK_OUT
-NoConn ~ 5850 3000
 NoConn ~ 5850 3900
 NoConn ~ 5850 4000
 NoConn ~ 7250 4500
 NoConn ~ 5850 3800
-NoConn ~ 7250 4400
-NoConn ~ 7250 4300
-NoConn ~ 7250 4200
-NoConn ~ 7250 4100
-NoConn ~ 7250 4000
-NoConn ~ 7250 3900
-NoConn ~ 7250 3300
 NoConn ~ 7250 2700
 NoConn ~ 7250 2500
 NoConn ~ 7250 2400
@@ -437,14 +429,6 @@ Wire Wire Line
 	7250 1800 7950 1800
 Text HLabel 7950 1800 2    50   Input ~ 0
 FootExp_IN
-Wire Wire Line
-	7250 1900 7950 1900
-Text HLabel 7950 1900 2    50   Input ~ 0
-UserPotA_IN
-Wire Wire Line
-	7250 2000 7950 2000
-Text HLabel 7950 2000 2    50   Input ~ 0
-UserPotB_IN
 Wire Wire Line
 	9800 2250 9700 2250
 Wire Wire Line
@@ -733,10 +717,6 @@ Text Notes 5250 3700 0    50   ~ 0
 DigitalInput
 Text Notes 7400 1800 0    50   ~ 0
 AnalogInput
-Text Notes 7400 1900 0    50   ~ 0
-AnalogInput
-Text Notes 7400 2000 0    50   ~ 0
-AnalogInput
 Text Notes 7375 2800 0    50   ~ 0
 DigitalOutput
 Text Notes 7375 2900 0    50   ~ 0
@@ -819,4 +799,95 @@ F 3 "~" H 10000 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 NoConn ~ 7250 2600
+Wire Wire Line
+	7250 3900 8075 3900
+Text HLabel 8075 3900 2    50   Input ~ 0
+Encoder1_ENC_A
+Text Notes 7375 3900 0    50   ~ 0
+TIM3_CH1
+Text Notes 7375 4000 0    50   ~ 0
+TIM3_CH2\n
+Wire Wire Line
+	7250 4000 8075 4000
+Text HLabel 8075 4000 2    50   Input ~ 0
+Encoder1_ENC_B
+Wire Wire Line
+	7250 4100 8075 4100
+Wire Wire Line
+	7250 4200 8075 4200
+Text Notes 7375 4100 0    50   ~ 0
+TIM4_CH1
+Text Notes 7375 4200 0    50   ~ 0
+TIM4_CH2
+Text HLabel 8075 4100 2    50   Input ~ 0
+Encoder2_ENC_A
+Text HLabel 8075 4200 2    50   Input ~ 0
+Encoder2_ENC_B
+NoConn ~ 7250 1900
+NoConn ~ 7250 2000
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5FB31B5E
+P 10125 5200
+F 0 "J8" H 10205 5192 50  0000 L CNN
+F 1 "Conn_01x04" H 10205 5101 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 10125 5200 50  0001 C CNN
+F 3 "~" H 10125 5200 50  0001 C CNN
+	1    10125 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4300 8075 4300
+Text Label 8075 4400 2    50   ~ 0
+OLED_SDA
+Wire Wire Line
+	7250 4400 8075 4400
+Text Label 8075 4300 2    50   ~ 0
+OLED_SCL
+Wire Wire Line
+	9925 5200 9450 5200
+Text Label 9450 5100 0    50   ~ 0
+OLED_SDA
+Wire Wire Line
+	9925 5100 9450 5100
+Text Label 9450 5200 0    50   ~ 0
+OLED_SCL
+Wire Wire Line
+	9925 5300 9275 5300
+Wire Wire Line
+	9275 5300 9275 5075
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5FB526D6
+P 9275 5075
+F 0 "#PWR06" H 9275 4925 50  0001 C CNN
+F 1 "+3V3" H 9290 5248 50  0000 C CNN
+F 2 "" H 9275 5075 50  0001 C CNN
+F 3 "" H 9275 5075 50  0001 C CNN
+	1    9275 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9925 5400 9275 5400
+Wire Wire Line
+	9275 5400 9275 5550
+$Comp
+L power:GNDS #PWR07
+U 1 1 5FB58162
+P 9275 5550
+F 0 "#PWR07" H 9275 5300 50  0001 C CNN
+F 1 "GNDS" H 9280 5377 50  0000 C CNN
+F 2 "" H 9275 5550 50  0001 C CNN
+F 3 "" H 9275 5550 50  0001 C CNN
+	1    9275 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3000 5100 3000
+Text HLabel 5100 3000 0    50   Input ~ 0
+Encoder2_ENC_SW
+Wire Wire Line
+	7250 3300 8000 3300
+Text HLabel 8000 3300 2    50   Input ~ 0
+Encoder1_ENC_SW
 $EndSCHEMATC

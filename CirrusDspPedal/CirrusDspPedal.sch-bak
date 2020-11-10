@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -106,14 +106,6 @@ Text Notes 4000 4675 0    50   ~ 0
 DigitalInput
 Text Notes 4500 2550 0    50   ~ 0
 DigitalOutput
-Wire Wire Line
-	3525 4850 5050 4850
-Wire Wire Line
-	3525 5025 5050 5025
-Text Notes 4000 4850 0    50   ~ 0
-AnalogInput
-Text Notes 4000 5025 0    50   ~ 0
-AnalogInput
 Text Notes 4375 1300 0    50   ~ 0
 I2S Input
 Text Notes 4375 1525 0    50   ~ 0
@@ -123,15 +115,13 @@ I2S Output
 Text Notes 7175 1525 0    50   ~ 0
 I2S Output
 Wire Wire Line
-	3525 5200 5050 5200
-Wire Wire Line
-	3525 5375 5050 5375
-Text Notes 4000 5200 0    50   ~ 0
+	3525 5850 5050 5850
+Text Notes 4025 5750 0    50   ~ 0
 DigitalInput
-Text Notes 4000 5375 0    50   ~ 0
+Text Notes 4025 5850 0    50   ~ 0
 DigitalInput
 $Sheet
-S 5050 2325 2000 3300
+S 5050 2325 2000 3675
 U 5F834F6D
 F0 "SignalProcessing" 50
 F1 "SignalProcessing.sch" 50
@@ -143,34 +133,39 @@ F6 "I2S_MCLK_OUT" I R 7050 3325 50
 F7 "I2S_SCLK_IN" I L 5050 3025 50 
 F8 "I2S_LRCK_OUT" I R 7050 3175 50 
 F9 "I2S_LRCK_IN" I L 5050 3175 50 
-F10 "UserSwitchB_IN" I L 5050 5375 50 
-F11 "UserSwithA_IN" I L 5050 5200 50 
+F10 "UserSwitchB_IN" I L 5050 5850 50 
+F11 "UserSwithA_IN" I L 5050 5750 50 
 F12 "RelayCoil_OUT" I L 5050 2550 50 
 F13 "FootExp_IN" I L 5050 4325 50 
-F14 "UserPotA_IN" I L 5050 4850 50 
-F15 "UserPotB_IN" I L 5050 5025 50 
-F16 "FootSwitchB_IN" I L 5050 4675 50 
-F17 "FootSwitchA_IN" I L 5050 4500 50 
-F18 "uSD_CMD" I R 7050 4725 50 
-F19 "uSD_CLK" I R 7050 4850 50 
-F20 "uSD_D0" I R 7050 4275 50 
-F21 "uSD_D1" I R 7050 4375 50 
-F22 "uSD_D2" I R 7050 4475 50 
-F23 "uSD_D3" I R 7050 4575 50 
-F24 "uSD_Detect" I R 7050 5050 50 
+F14 "FootSwitchB_IN" I L 5050 4675 50 
+F15 "FootSwitchA_IN" I L 5050 4500 50 
+F16 "uSD_CMD" I R 7050 4725 50 
+F17 "uSD_CLK" I R 7050 4850 50 
+F18 "uSD_D0" I R 7050 4275 50 
+F19 "uSD_D1" I R 7050 4375 50 
+F20 "uSD_D2" I R 7050 4475 50 
+F21 "uSD_D3" I R 7050 4575 50 
+F22 "Encoder1_ENC_A" I L 5050 5000 50 
+F23 "Encoder1_ENC_B" I L 5050 5100 50 
+F24 "Encoder2_ENC_A" I L 5050 5375 50 
+F25 "Encoder2_ENC_B" I L 5050 5475 50 
 $EndSheet
 $Sheet
-S 2800 4050 725  1600
+S 2725 4050 800  1950
 U 5F898CA5
 F0 "ExtInput" 50
 F1 "ExtInput.sch" 50
 F2 "FootSwitchA_IN" I R 3525 4500 50 
 F3 "FootSwitchB_IN" I R 3525 4675 50 
-F4 "UserPotA_IN" I R 3525 4850 50 
-F5 "UserPotB_IN" I R 3525 5025 50 
-F6 "UserSwitchA_IN" I R 3525 5200 50 
-F7 "UserSwitchB_IN" I R 3525 5375 50 
-F8 "FootExp_IN" I R 3525 4325 50 
+F4 "UserSwitchA_IN" I R 3525 5750 50 
+F5 "UserSwitchB_IN" I R 3525 5850 50 
+F6 "FootExp_IN" I R 3525 4325 50 
+F7 "Encoder1_ENC_SW" I R 3525 4900 50 
+F8 "Encoder1_ENC_A" I R 3525 5000 50 
+F9 "Encoder1_ENC_B" I R 3525 5100 50 
+F10 "Encoder2_ENC_SW" I R 3525 5275 50 
+F11 "Encoder2_ENC_A" I R 3525 5375 50 
+F12 "Encoder2_ENC_B" I R 3525 5475 50 
 $EndSheet
 $Sheet
 S 8525 4075 1225 1250
@@ -183,7 +178,6 @@ F4 "uSD_D1" I L 8525 4375 50
 F5 "uSD_D2" I L 8525 4475 50 
 F6 "uSD_D3" I L 8525 4575 50 
 F7 "uSD_CMD" I L 8525 4725 50 
-F8 "uSD_Detect" I L 8525 5050 50 
 $EndSheet
 Wire Wire Line
 	8525 4725 7050 4725
@@ -198,5 +192,19 @@ Wire Wire Line
 Wire Wire Line
 	8525 4850 7050 4850
 Wire Wire Line
-	8525 5050 7050 5050
+	3525 5750 5050 5750
+Wire Wire Line
+	3525 5000 5050 5000
+Wire Wire Line
+	3525 5100 5050 5100
+Wire Wire Line
+	3525 5375 5050 5375
+Wire Wire Line
+	3525 5475 5050 5475
+Wire Wire Line
+	3525 5275 3750 5275
+NoConn ~ 3750 5275
+Wire Wire Line
+	3525 4900 3750 4900
+NoConn ~ 3750 4900
 $EndSCHEMATC
