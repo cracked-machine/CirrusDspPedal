@@ -2,4 +2,5 @@
   (lib (name CirrusAudioConverters)(type Legacy)(uri ${KIPRJMOD}/../../KicadLibrary/symbol/AUDIOCONVERTERS/CirrusAudioConverters.lib)(options "")(descr ""))
   (lib (name MonoJack2Switch)(type Legacy)(uri ${KIPRJMOD}/../../KicadLibrary/symbol/CONNECTOR/AUDIO/MonoJack2Switch.lib)(options "")(descr ""))
   (lib (name audiojack2-connector_numbered)(type Legacy)(uri ${KIPRJMOD}/../../KicadLibrary/symbol/CONNECTOR/AUDIO/audiojack2-connector_numbered.lib)(options "")(descr ""))
+  (lib (name TPS6040x)(type Legacy)(uri ${KIPRJMOD}/../../KicadLibrary/symbol/PWR/DC-DC/CHARGEPUMP/TPS6040x.lib)(options "")(descr ""))
 )
