@@ -119,7 +119,7 @@ L Device:C C28
 U 1 1 5F963970
 P 5000 2725
 F 0 "C28" H 5115 2771 50  0000 L CNN
-F 1 "1uF" H 5115 2680 50  0000 L CNN
+F 1 "1uF 25V" H 5115 2680 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5038 2575 50  0001 C CNN
 F 3 "~" H 5000 2725 50  0001 C CNN
 	1    5000 2725
@@ -230,17 +230,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf" H 6200 2400 
 	1    6200 2450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:MCP1700-5002E_SOT23 U4
-U 1 1 5FA5721B
-P 6200 4575
-F 0 "U4" H 6200 4817 50  0000 C CNN
-F 1 "SE8250X2_SOT23" H 6200 4726 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 4800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_Seaward-Elec-SE8250X2_C437589.pdf" H 6200 4575 50  0001 C CNN
-	1    6200 4575
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 4575 5250 4575
 Wire Wire Line
@@ -281,7 +270,7 @@ L Device:C C23
 U 1 1 5FA5E1DF
 P 5250 4850
 F 0 "C23" H 5365 4896 50  0000 L CNN
-F 1 "1uF" H 5365 4805 50  0000 L CNN
+F 1 "100nF 25V" H 5365 4805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5288 4700 50  0001 C CNN
 F 3 "~" H 5250 4850 50  0001 C CNN
 	1    5250 4850
@@ -310,7 +299,7 @@ L Device:C C24
 U 1 1 5FA5EBEB
 P 7450 4850
 F 0 "C24" H 7565 4896 50  0000 L CNN
-F 1 "1uF" H 7565 4805 50  0000 L CNN
+F 1 "10uF" H 7565 4805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7488 4700 50  0001 C CNN
 F 3 "~" H 7450 4850 50  0001 C CNN
 	1    7450 4850
@@ -335,5 +324,16 @@ Connection ~ 7450 4575
 Wire Wire Line
 	7450 4575 8400 4575
 Text Notes 5975 4275 0    50   ~ 0
-30Vin Max\n100mA out
+15Vin Max\n800mA out
+$Comp
+L Regulator_Linear:LD1117S50TR_SOT223 U4
+U 1 1 5FAACAF4
+P 6200 4575
+F 0 "U4" H 6200 4817 50  0000 C CNN
+F 1 "LD1117S50TR_SOT223" H 6200 4726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6200 4775 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6300 4325 50  0001 C CNN
+	1    6200 4575
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Tuesday, 10 November 2020 at 00:29:51
+update=Tuesday, 10 November 2020 at 14:06:50
 version=1
 last_client=kicad
 [general]
@@ -59,7 +59,7 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.05
+SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
@@ -244,7 +244,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=docs/schema/svg
+PlotDirectoryName=docs/schema/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
