@@ -21,9 +21,9 @@ AR Path="/5F898CA5/5FAC4008" Ref="SW?"  Part="1"
 AR Path="/5F898CA5/5FAC3062/5FAC4008" Ref="SW5"  Part="1" 
 AR Path="/5F898CA5/5FAC8ACD/5FAC4008" Ref="SW6"  Part="1" 
 F 0 "SW6" V 5746 3020 50  0000 R CNN
-F 1 "Rotary_Encoder_Switch" V 5655 3020 50  0000 R CNN
+F 1 "PEC11R-4020K-S0024" V 5655 3020 50  0000 R CNN
 F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 5550 3410 50  0001 C CNN
-F 3 "~" H 5700 3510 50  0001 C CNN
+F 3 "https://docs.rs-online.com/6e29/0900766b80fa5804.pdf" H 5700 3510 50  0001 C CNN
 	1    5700 3250
 	0    -1   -1   0   
 $EndComp

@@ -14,49 +14,49 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	6850 1600 6850 1325
-Text Label 7075 1325 2    50   ~ 0
+	6250 1650 6250 1375
+Text Label 6475 1375 2    50   ~ 0
 VDDA
 Wire Wire Line
-	6350 1600 6350 1325
+	5750 1650 5750 1375
 Wire Wire Line
-	6600 1325 6600 1150
+	6000 1375 6000 1200
 $Comp
 L power:+3.3V #PWR0117
 U 1 1 5F8CB96B
-P 6600 1150
-F 0 "#PWR0117" H 6600 1000 50  0001 C CNN
-F 1 "+3.3V" H 6615 1323 50  0000 C CNN
-F 2 "" H 6600 1150 50  0001 C CNN
-F 3 "" H 6600 1150 50  0001 C CNN
-	1    6600 1150
+P 6000 1200
+F 0 "#PWR0117" H 6000 1050 50  0001 C CNN
+F 1 "+3.3V" H 6015 1373 50  0000 C CNN
+F 2 "" H 6000 1200 50  0001 C CNN
+F 3 "" H 6000 1200 50  0001 C CNN
+	1    6000 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 1325 6550 1325
+	6000 1375 5950 1375
 Wire Wire Line
-	6600 1325 6650 1325
-Connection ~ 6600 1325
+	6000 1375 6050 1375
+Connection ~ 6000 1375
 Wire Wire Line
-	6750 1600 6750 1325
+	6150 1650 6150 1375
 Wire Wire Line
-	6650 1600 6650 1325
-Connection ~ 6650 1325
+	6050 1650 6050 1375
+Connection ~ 6050 1375
 Wire Wire Line
-	6650 1325 6750 1325
+	6050 1375 6150 1375
 Wire Wire Line
-	6550 1600 6550 1325
-Connection ~ 6550 1325
+	5950 1650 5950 1375
+Connection ~ 5950 1375
 Wire Wire Line
-	6550 1325 6450 1325
+	5950 1375 5850 1375
 Wire Wire Line
-	6450 1600 6450 1325
+	5850 1650 5850 1375
 Wire Wire Line
-	5850 1800 5150 1800
-Text Label 5150 1800 2    50   ~ 0
+	5250 1850 4550 1850
+Text Label 4550 1850 2    50   ~ 0
 NRST
 Wire Wire Line
-	5850 2000 4950 2000
+	5250 2050 4350 2050
 $Comp
 L Device:C C?
 U 1 1 5F8EA1EC
@@ -206,36 +206,36 @@ VDDA
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 5F8EF106
-P 2325 2600
-F 0 "J3" H 2375 3017 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 2375 2926 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 2325 2600 50  0001 C CNN
-F 3 "https://docs.rs-online.com/75e3/0900766b8142184e.pdf" H 2325 2600 50  0001 C CNN
-	1    2325 2600
+P 2025 2000
+F 0 "J3" H 2075 2417 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 2075 2326 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 2025 2000 50  0001 C CNN
+F 3 "https://docs.rs-online.com/75e3/0900766b8142184e.pdf" H 2025 2000 50  0001 C CNN
+	1    2025 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 5200 6650 5400
+	6050 5250 6050 5450
 Wire Wire Line
-	6550 5200 6550 5400
-Connection ~ 6550 5400
+	5950 5250 5950 5450
+Connection ~ 5950 5450
 Wire Wire Line
-	6550 5400 6650 5400
+	5950 5450 6050 5450
 Wire Wire Line
-	6450 5200 6450 5400
+	5850 5250 5850 5450
 Wire Wire Line
-	6450 5400 6550 5400
+	5850 5450 5950 5450
 Wire Wire Line
-	6550 5400 6550 5575
+	5950 5450 5950 5625
 $Comp
 L power:GNDS #PWR0122
 U 1 1 5F8F5605
-P 6550 5575
-F 0 "#PWR0122" H 6550 5325 50  0001 C CNN
-F 1 "GNDS" H 6555 5402 50  0000 C CNN
-F 2 "" H 6550 5575 50  0001 C CNN
-F 3 "" H 6550 5575 50  0001 C CNN
-	1    6550 5575
+P 5950 5625
+F 0 "#PWR0122" H 5950 5375 50  0001 C CNN
+F 1 "GNDS" H 5955 5452 50  0000 C CNN
+F 2 "" H 5950 5625 50  0001 C CNN
+F 3 "" H 5950 5625 50  0001 C CNN
+	1    5950 5625
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -268,131 +268,131 @@ Wire Wire Line
 	5100 6650 4675 6650
 Wire Wire Line
 	4675 6650 4675 6875
-Text HLabel 2225 4800 0    50   Input ~ 0
+Text HLabel 1925 4200 0    50   Input ~ 0
 I2S_MCLK_IN
-Text HLabel 2725 3800 2    50   Input ~ 0
+Text HLabel 2425 3200 2    50   Input ~ 0
 I2S_SCLK_OUT
-NoConn ~ 5850 3900
-NoConn ~ 5850 4000
-NoConn ~ 7250 4500
-NoConn ~ 5850 3800
-NoConn ~ 7250 2700
-NoConn ~ 7250 2500
-NoConn ~ 7250 2400
-NoConn ~ 7250 2300
-NoConn ~ 7250 2200
-NoConn ~ 7250 2100
+NoConn ~ 5250 3950
+NoConn ~ 5250 4050
+NoConn ~ 6650 4550
+NoConn ~ 5250 3850
+NoConn ~ 6650 2750
+NoConn ~ 6650 2550
+NoConn ~ 6650 2450
+NoConn ~ 6650 2350
+NoConn ~ 6650 2250
+NoConn ~ 6650 2150
 Wire Wire Line
-	2125 2400 1850 2400
+	1825 1800 1550 1800
 Wire Wire Line
-	1850 2400 1850 2250
+	1550 1800 1550 1650
 $Comp
 L power:+3.3V #PWR0124
 U 1 1 5F926A81
-P 1850 2250
-F 0 "#PWR0124" H 1850 2100 50  0001 C CNN
-F 1 "+3.3V" H 1865 2423 50  0000 C CNN
-F 2 "" H 1850 2250 50  0001 C CNN
-F 3 "" H 1850 2250 50  0001 C CNN
-	1    1850 2250
+P 1550 1650
+F 0 "#PWR0124" H 1550 1500 50  0001 C CNN
+F 1 "+3.3V" H 1565 1823 50  0000 C CNN
+F 2 "" H 1550 1650 50  0001 C CNN
+F 3 "" H 1550 1650 50  0001 C CNN
+	1    1550 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2125 2800 1850 2800
+	1825 2200 1550 2200
 Wire Wire Line
-	1850 2800 1850 2925
+	1550 2200 1550 2325
 $Comp
 L power:GNDS #PWR0125
 U 1 1 5F927E39
-P 1850 2925
-F 0 "#PWR0125" H 1850 2675 50  0001 C CNN
-F 1 "GNDS" H 1855 2752 50  0000 C CNN
-F 2 "" H 1850 2925 50  0001 C CNN
-F 3 "" H 1850 2925 50  0001 C CNN
-	1    1850 2925
+P 1550 2325
+F 0 "#PWR0125" H 1550 2075 50  0001 C CNN
+F 1 "GNDS" H 1555 2152 50  0000 C CNN
+F 2 "" H 1550 2325 50  0001 C CNN
+F 3 "" H 1550 2325 50  0001 C CNN
+	1    1550 2325
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2125 2500 1850 2500
-Connection ~ 1850 2800
+	1825 1900 1550 1900
+Connection ~ 1550 2200
 Wire Wire Line
-	1850 2500 1850 2600
+	1550 1900 1550 2000
 Wire Wire Line
-	2125 2600 1850 2600
-Connection ~ 1850 2600
+	1825 2000 1550 2000
+Connection ~ 1550 2000
 Wire Wire Line
-	1850 2600 1850 2800
-NoConn ~ 2125 2700
-NoConn ~ 2625 2700
+	1550 2000 1550 2200
+NoConn ~ 1825 2100
+NoConn ~ 2325 2100
 Wire Wire Line
-	2625 2800 2950 2800
-Text Label 2950 2800 0    50   ~ 0
+	2325 2200 2650 2200
+Text Label 2650 2200 0    50   ~ 0
 NRST
 Wire Wire Line
-	2625 2600 2950 2600
+	2325 2000 2650 2000
 Wire Wire Line
-	2625 2500 2950 2500
+	2325 1900 2650 1900
 Wire Wire Line
-	2625 2400 2950 2400
+	2325 1800 2650 1800
 Wire Wire Line
-	7250 3100 8075 3100
-Text Label 8075 3100 0    50   ~ 0
+	6650 3150 7475 3150
+Text Label 7475 3150 0    50   ~ 0
 SWDIO
-Text Label 2950 2400 0    50   ~ 0
+Text Label 2650 1800 0    50   ~ 0
 SWDIO
-Text Label 2950 2500 0    50   ~ 0
+Text Label 2650 1900 0    50   ~ 0
 SWCLK
-Text Label 2950 2600 0    50   ~ 0
+Text Label 2650 2000 0    50   ~ 0
 SWO
 Wire Wire Line
-	7250 3200 8075 3200
-Text Label 8075 3200 0    50   ~ 0
+	6650 3250 7475 3250
+Text Label 7475 3250 0    50   ~ 0
 SWCLK
 Wire Wire Line
-	7250 3800 8075 3800
-Text Label 8075 3800 0    50   ~ 0
+	6650 3850 7475 3850
+Text Label 7475 3850 0    50   ~ 0
 SWO
-Text HLabel 2725 4800 2    50   Input ~ 0
+Text HLabel 2425 4200 2    50   Input ~ 0
 I2S_MCLK_OUT
 Wire Wire Line
-	2225 4800 2475 4800
+	1925 4200 2175 4200
 Wire Wire Line
-	2475 4800 2475 4600
+	2175 4200 2175 4000
 Wire Wire Line
-	2475 4600 2900 4600
-Connection ~ 2475 4800
+	2175 4000 2600 4000
+Connection ~ 2175 4200
 Wire Wire Line
-	2475 4800 2725 4800
-Text Label 2900 4600 2    50   ~ 0
+	2175 4200 2425 4200
+Text Label 2600 4000 2    50   ~ 0
 I2S_MCLK
-Text Label 2900 3600 2    50   ~ 0
+Text Label 2600 3000 2    50   ~ 0
 I2S_SCLK
 Wire Wire Line
-	2475 3600 2475 3800
+	2175 3000 2175 3200
 Wire Wire Line
-	2475 3600 2900 3600
-Text HLabel 2225 3800 0    50   Input ~ 0
+	2175 3000 2600 3000
+Text HLabel 1925 3200 0    50   Input ~ 0
 I2S_SCLK_IN
 Wire Wire Line
-	2225 3800 2475 3800
-Connection ~ 2475 3800
+	1925 3200 2175 3200
+Connection ~ 2175 3200
 Wire Wire Line
-	2475 3800 2725 3800
-Text HLabel 2725 4275 2    50   Input ~ 0
+	2175 3200 2425 3200
+Text HLabel 2425 3675 2    50   Input ~ 0
 I2S_LRCK_OUT
-Text Label 2900 4075 2    50   ~ 0
+Text Label 2600 3475 2    50   ~ 0
 I2S_LRCK
 Wire Wire Line
-	2475 4075 2475 4275
+	2175 3475 2175 3675
 Wire Wire Line
-	2475 4075 2900 4075
-Text HLabel 2225 4275 0    50   Input ~ 0
+	2175 3475 2600 3475
+Text HLabel 1925 3675 0    50   Input ~ 0
 I2S_LRCK_IN
 Wire Wire Line
-	2225 4275 2475 4275
-Connection ~ 2475 4275
+	1925 3675 2175 3675
+Connection ~ 2175 3675
 Wire Wire Line
-	2475 4275 2725 4275
+	2175 3675 2425 3675
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5F96C93C
@@ -422,12 +422,12 @@ Connection ~ 5825 6650
 Wire Wire Line
 	5825 6650 6250 6650
 Wire Wire Line
-	6850 1325 7075 1325
+	6250 1375 6475 1375
 Wire Wire Line
-	6350 1325 6450 1325
+	5750 1375 5850 1375
 Wire Wire Line
-	7250 1800 7950 1800
-Text HLabel 7950 1800 2    50   Input ~ 0
+	6650 1850 7350 1850
+Text HLabel 7350 1850 2    50   Input ~ 0
 FootExp_IN
 Wire Wire Line
 	9800 2250 9700 2250
@@ -562,93 +562,93 @@ LEDB_G
 Text Label 9050 3850 0    50   ~ 0
 LEDB_B
 Wire Wire Line
-	7250 3500 8075 3500
+	6650 3550 7475 3550
 Wire Wire Line
-	7250 3600 8075 3600
-Text Label 8075 3500 0    50   ~ 0
+	6650 3650 7475 3650
+Text Label 7475 3550 0    50   ~ 0
 LEDA_R
-Text Label 8075 3600 0    50   ~ 0
+Text Label 7475 3650 0    50   ~ 0
 LEDA_G
-Text Label 8075 3700 0    50   ~ 0
+Text Label 7475 3750 0    50   ~ 0
 LEDA_B
 Wire Wire Line
-	7250 3700 8075 3700
+	6650 3750 7475 3750
 Wire Wire Line
-	7250 2800 8075 2800
+	6650 2850 7475 2850
 Wire Wire Line
-	7250 2900 8075 2900
+	6650 2950 7475 2950
 Wire Wire Line
-	7250 3000 8075 3000
-Text Label 8075 2800 0    50   ~ 0
+	6650 3050 7475 3050
+Text Label 7475 2850 0    50   ~ 0
 LEDB_R
-Text Label 8075 2900 0    50   ~ 0
+Text Label 7475 2950 0    50   ~ 0
 LEDB_G
-Text Label 8075 3000 0    50   ~ 0
+Text Label 7475 3050 0    50   ~ 0
 LEDB_B
 $Comp
 L MCU_ST_STM32F4:STM32F405RGTx U7
 U 1 1 5F8CA3AF
-P 6550 3400
-F 0 "U7" H 5425 5450 50  0000 C CNN
-F 1 "STM32F405RGTx" H 5600 5350 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5950 1700 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 6550 3400 50  0001 C CNN
-	1    6550 3400
+P 5950 3450
+F 0 "U7" H 4825 5500 50  0000 C CNN
+F 1 "STM32F405RGTx" H 5000 5400 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5350 1750 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 5950 3450 50  0001 C CNN
+	1    5950 3450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5850 3100
-NoConn ~ 5850 5000
-Text HLabel 5100 3700 0    50   Input ~ 0
+NoConn ~ 5250 3150
+NoConn ~ 5250 5050
+Text HLabel 4500 3750 0    50   Input ~ 0
 UserSwitchB_IN
 Wire Wire Line
-	5850 3700 5100 3700
-Text HLabel 5100 3600 0    50   Input ~ 0
+	5250 3750 4500 3750
+Text HLabel 4500 3650 0    50   Input ~ 0
 UserSwithA_IN
 Wire Wire Line
-	5850 3600 5100 3600
-Text HLabel 5100 3500 0    50   Input ~ 0
+	5250 3650 4500 3650
+Text HLabel 4500 3550 0    50   Input ~ 0
 RelayCoil_OUT
 Wire Wire Line
-	5850 3500 5100 3500
-Text Notes 7725 4800 2    50   ~ 0
+	5250 3550 4500 3550
+Text Notes 7125 4850 2    50   ~ 0
 I2S_2_CK
-Text Notes 5200 4100 0    50   ~ 0
+Text Notes 4600 4150 0    50   ~ 0
 I2S_2_MCLK
-Text Label 8100 4800 0    50   ~ 0
+Text Label 7500 4850 0    50   ~ 0
 I2S_SCLK
-Text Label 5100 4100 2    50   ~ 0
+Text Label 4500 4150 2    50   ~ 0
 I2S_MCLK
 Wire Wire Line
-	7250 4800 8100 4800
+	6650 4850 7500 4850
 Wire Wire Line
-	5850 4100 5100 4100
+	5250 4150 4500 4150
 Wire Wire Line
-	5850 4800 5100 4800
+	5250 4850 4500 4850
 Wire Wire Line
-	5850 4900 5100 4900
-Text HLabel 5100 4900 0    50   Input ~ 0
+	5250 4950 4500 4950
+Text HLabel 4500 4950 0    50   Input ~ 0
 FootSwitchB_IN
-Text HLabel 5100 4800 0    50   Input ~ 0
+Text HLabel 4500 4850 0    50   Input ~ 0
 FootSwitchA_IN
-Text Notes 7375 4700 0    50   ~ 0
+Text Notes 6775 4750 0    50   ~ 0
 I2S_2_WS
-Text Notes 7375 4900 0    50   ~ 0
+Text Notes 6775 4950 0    50   ~ 0
 I2S_2_Ext_SD
-Text Notes 7375 5000 0    50   ~ 0
+Text Notes 6775 5050 0    50   ~ 0
 I2S_2_SD
-Text Label 8100 4700 0    50   ~ 0
+Text Label 7500 4750 0    50   ~ 0
 I2S_LRCK
-Text HLabel 8100 5000 2    50   Input ~ 0
+Text HLabel 7500 5050 2    50   Input ~ 0
 I2S_OUT
 Wire Wire Line
-	7250 5000 8100 5000
-Text HLabel 8100 4900 2    50   Input ~ 0
+	6650 5050 7500 5050
+Text HLabel 7500 4950 2    50   Input ~ 0
 I2S_IN
 Wire Wire Line
-	7250 4900 8100 4900
+	6650 4950 7500 4950
 Wire Wire Line
-	7250 4700 8100 4700
-NoConn ~ 7250 4600
+	6650 4750 7500 4750
+NoConn ~ 6650 4650
 $Comp
 L Device:C C?
 U 1 1 5F9AC393
@@ -671,7 +671,7 @@ Wire Wire Line
 Connection ~ 4675 6875
 Wire Wire Line
 	4675 6875 4675 7200
-NoConn ~ 5850 4200
+NoConn ~ 5250 4250
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F9C7D86
@@ -691,91 +691,91 @@ VCAP2
 $Comp
 L power:GNDS #PWR0141
 U 1 1 5F9FE44F
-P 4950 2100
-F 0 "#PWR0141" H 4950 1850 50  0001 C CNN
-F 1 "GNDS" H 4955 1927 50  0000 C CNN
-F 2 "" H 4950 2100 50  0001 C CNN
-F 3 "" H 4950 2100 50  0001 C CNN
-	1    4950 2100
+P 4350 2150
+F 0 "#PWR0141" H 4350 1900 50  0001 C CNN
+F 1 "GNDS" H 4355 1977 50  0000 C CNN
+F 2 "" H 4350 2150 50  0001 C CNN
+F 3 "" H 4350 2150 50  0001 C CNN
+	1    4350 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 2000 4950 2100
+	4350 2050 4350 2150
 Wire Wire Line
-	5850 2200 5575 2200
+	5250 2250 4975 2250
 Wire Wire Line
-	5850 2300 5575 2300
-Text Label 5575 2200 2    50   ~ 0
+	5250 2350 4975 2350
+Text Label 4975 2250 2    50   ~ 0
 VCAP1
-Text Label 5575 2300 2    50   ~ 0
+Text Label 4975 2350 2    50   ~ 0
 VCAP2
-Text Notes 5250 3500 0    50   ~ 0
+Text Notes 4650 3550 0    50   ~ 0
 DigitalOutput
-Text Notes 5250 3600 0    50   ~ 0
+Text Notes 4650 3650 0    50   ~ 0
 DigitalInput
-Text Notes 5250 3700 0    50   ~ 0
+Text Notes 4650 3750 0    50   ~ 0
 DigitalInput
-Text Notes 7400 1800 0    50   ~ 0
+Text Notes 6800 1850 0    50   ~ 0
 AnalogInput
-Text Notes 7375 2800 0    50   ~ 0
+Text Notes 6775 2850 0    50   ~ 0
 DigitalOutput
-Text Notes 7375 2900 0    50   ~ 0
+Text Notes 6775 2950 0    50   ~ 0
 DigitalOutput
-Text Notes 7375 3000 0    50   ~ 0
+Text Notes 6775 3050 0    50   ~ 0
 DigitalOutput
-Text Notes 7375 3500 0    50   ~ 0
+Text Notes 6775 3550 0    50   ~ 0
 DigitalOutput
-Text Notes 7375 3600 0    50   ~ 0
+Text Notes 6775 3650 0    50   ~ 0
 DigitalOutput
-Text Notes 7375 3700 0    50   ~ 0
+Text Notes 6775 3750 0    50   ~ 0
 DigitalOutput
-Text Notes 5250 4800 0    50   ~ 0
+Text Notes 4650 4850 0    50   ~ 0
 DigitalInput
-Text Notes 5250 4900 0    50   ~ 0
+Text Notes 4650 4950 0    50   ~ 0
 DigitalInput
-Text Notes 7375 3800 0    50   ~ 0
+Text Notes 6775 3850 0    50   ~ 0
 SYS_JTDO-SWO
-Text Notes 7375 3100 0    50   ~ 0
+Text Notes 6775 3150 0    50   ~ 0
 SYS_JTMS-SWDIO
-Text Notes 7375 3200 0    50   ~ 0
+Text Notes 6775 3250 0    50   ~ 0
 SYS_JTCK-SWCLK
 Wire Wire Line
-	5850 3300 5100 3300
+	5250 3350 4500 3350
 Wire Wire Line
-	5850 4300 5100 4300
+	5250 4350 4500 4350
 Wire Wire Line
-	5850 4400 5100 4400
+	5250 4450 4500 4450
 Wire Wire Line
-	5850 4500 5100 4500
+	5250 4550 4500 4550
 Wire Wire Line
-	5850 4600 5100 4600
+	5250 4650 4500 4650
 Wire Wire Line
-	5100 4700 5850 4700
-Text Notes 5300 4300 0    50   ~ 0
+	4500 4750 5250 4750
+Text Notes 4700 4350 0    50   ~ 0
 SDIO_D0
-Text Notes 5300 4400 0    50   ~ 0
+Text Notes 4700 4450 0    50   ~ 0
 SDIO_D1
-Text Notes 5300 4500 0    50   ~ 0
+Text Notes 4700 4550 0    50   ~ 0
 SDIO_D2
-Text Notes 5300 4600 0    50   ~ 0
+Text Notes 4700 4650 0    50   ~ 0
 SDIO_D3
-Text Notes 5300 4700 0    50   ~ 0
+Text Notes 4700 4750 0    50   ~ 0
 SDIO_CK
-Text Notes 5250 3300 0    50   ~ 0
+Text Notes 4650 3350 0    50   ~ 0
 SDIO_CMD
-Text HLabel 5100 3300 0    50   Input ~ 0
+Text HLabel 4500 3350 0    50   Input ~ 0
 uSD_CMD
-Text HLabel 5100 4700 0    50   Input ~ 0
+Text HLabel 4500 4750 0    50   Input ~ 0
 uSD_CLK
-Text HLabel 5100 4300 0    50   Input ~ 0
+Text HLabel 4500 4350 0    50   Input ~ 0
 uSD_D0
-Text HLabel 5100 4400 0    50   Input ~ 0
+Text HLabel 4500 4450 0    50   Input ~ 0
 uSD_D1
-Text HLabel 5100 4500 0    50   Input ~ 0
+Text HLabel 4500 4550 0    50   Input ~ 0
 uSD_D2
-Text HLabel 5100 4600 0    50   Input ~ 0
+Text HLabel 4500 4650 0    50   Input ~ 0
 uSD_D3
-Connection ~ 6450 1325
+Connection ~ 5850 1375
 $Comp
 L Device:LED_RCBG LED1
 U 1 1 5F9CA392
@@ -798,33 +798,33 @@ F 3 "~" H 10000 3600 50  0001 C CNN
 	1    10000 3650
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 7250 2600
+NoConn ~ 6650 2650
 Wire Wire Line
-	7250 3900 8075 3900
-Text HLabel 8075 3900 2    50   Input ~ 0
+	6650 3950 7475 3950
+Text HLabel 7475 3950 2    50   Input ~ 0
 Encoder1_ENC_A
-Text Notes 7375 3900 0    50   ~ 0
+Text Notes 6775 3950 0    50   ~ 0
 TIM3_CH1
-Text Notes 7375 4000 0    50   ~ 0
+Text Notes 6775 4050 0    50   ~ 0
 TIM3_CH2\n
 Wire Wire Line
-	7250 4000 8075 4000
-Text HLabel 8075 4000 2    50   Input ~ 0
+	6650 4050 7475 4050
+Text HLabel 7475 4050 2    50   Input ~ 0
 Encoder1_ENC_B
 Wire Wire Line
-	7250 4100 8075 4100
+	6650 4150 7475 4150
 Wire Wire Line
-	7250 4200 8075 4200
-Text Notes 7375 4100 0    50   ~ 0
+	6650 4250 7475 4250
+Text Notes 6775 4150 0    50   ~ 0
 TIM4_CH1
-Text Notes 7375 4200 0    50   ~ 0
+Text Notes 6775 4250 0    50   ~ 0
 TIM4_CH2
-Text HLabel 8075 4100 2    50   Input ~ 0
+Text HLabel 7475 4150 2    50   Input ~ 0
 Encoder2_ENC_A
-Text HLabel 8075 4200 2    50   Input ~ 0
+Text HLabel 7475 4250 2    50   Input ~ 0
 Encoder2_ENC_B
-NoConn ~ 7250 1900
-NoConn ~ 7250 2000
+NoConn ~ 6650 1950
+NoConn ~ 6650 2050
 $Comp
 L Connector_Generic:Conn_01x04 J8
 U 1 1 5FB31B5E
@@ -837,12 +837,12 @@ F 3 "~" H 10125 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 4300 8075 4300
-Text Label 8075 4400 2    50   ~ 0
+	6650 4350 7475 4350
+Text Label 7475 4450 2    50   ~ 0
 OLED_SDA
 Wire Wire Line
-	7250 4400 8075 4400
-Text Label 8075 4300 2    50   ~ 0
+	6650 4450 7475 4450
+Text Label 7475 4350 2    50   ~ 0
 OLED_SCL
 Wire Wire Line
 	9925 5200 9450 5200
@@ -872,12 +872,12 @@ F 3 "" H 9275 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 3000 5100 3000
-Text HLabel 5100 3000 0    50   Input ~ 0
+	5250 3050 4500 3050
+Text HLabel 4500 3050 0    50   Input ~ 0
 Encoder2_ENC_SW
 Wire Wire Line
-	7250 3300 8000 3300
-Text HLabel 8000 3300 2    50   Input ~ 0
+	6650 3350 7400 3350
+Text HLabel 7400 3350 2    50   Input ~ 0
 Encoder1_ENC_SW
 $Comp
 L Jumper:Jumper_3_Bridged12 JP1
