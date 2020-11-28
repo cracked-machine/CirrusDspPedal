@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name NeutrikNRJ)(type KiCad)(uri ${KIPRJMOD}/../../KicadLibrary/footprint/CONNECTORS/AUDIO/NeutrikNRJ.pretty)(options "")(descr ""))
+  (lib (name Hammond1590)(type KiCad)(uri ${KIPRJMOD}/../../KicadLibrary/footprint/ENCLOSURES/HAMMOND/Hammond1590.pretty)(options "")(descr ""))
+  (lib (name custom_sw)(type KiCad)(uri ${KIPRJMOD}/../../KicadLibrary/footprint/SWITCHES/custom_sw.pretty)(options "")(descr ""))
+  (lib (name Molex_SDIO)(type KiCad)(uri ${KIPRJMOD}/../../KicadLibrary/footprint/CONNECTORS/SIGNAL/Molex_SDIO/Molex_SDIO.pretty)(options "")(descr ""))
+)
